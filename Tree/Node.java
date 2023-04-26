@@ -1,9 +1,11 @@
-public class Node {
+
+
+public class Node<T> {
 
     private String info;
     private Node liftNode = null;
     private Node RightNode = null;
-    
+
     public String getInfo() {
         return info;
     }
