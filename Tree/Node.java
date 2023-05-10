@@ -1,64 +1,39 @@
 
-/* 
-public class Node<T> {
-
-    private String info;
-    private Node liftNode = null;
-    private Node RightNode = null;
-
-    public String getInfo() {
-        return info;
-    }
-    public void setInfo(String info) {
-        this.info = info;
-    }
-    public Node getLiftNode() {
-        return liftNode;
-    }
-    public void setLiftNode(Node liftNode) {
-        this.liftNode = liftNode;
-    }
-    public Node getRightNode() {
-        return RightNode;
-    }
-    public void setRightNode(Node rightNode) {
-        RightNode = rightNode;
-    }
-
-}*/
-
 
 public class Node {
-    String information;
-    Node left;
-    Node right;
 
-    public Node(String inf){
-        this.information = inf;
-        left = right = null;
-    }
+	private String info;
+	private Node leftNode;
+	private Node rightNode;
 
-    public String getInformation() {
-        return information;
-    }
+	public Node(String info) {
+		this.info = info;
+		this.leftNode = null;
+		this.rightNode = null;
+	}
 
-    public void setInformation(String information) {
-        this.information = information;
-    }
+	public String getInfo() {
+		return info;
+	}
 
-    public Node getLeft() {
-        return left;
-    }
+	public void setInfo(String info) {
+		this.info = info;
+	}
 
-    public void setLeft(Node left) {
-        this.left = left;
-    }
+	public Node getLeft() {
+		return leftNode;
+	}
 
-    public Node getRight() {
-        return right;
-    }
+	public void setLeft(Node leftNode) {
+		this.leftNode = leftNode;
+	}
 
-    public void setRight(Node right) {
-        this.right = right;
-    }
+	public Node getRight() {
+		return rightNode;
+	}
+
+	public void setRight(Node rightNode) {
+		this.rightNode = rightNode;
+	}
+
 }
