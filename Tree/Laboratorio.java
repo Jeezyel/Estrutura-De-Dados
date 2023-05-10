@@ -1,4 +1,4 @@
-package unitins;
+
 
 public class Laboratorio {
 
