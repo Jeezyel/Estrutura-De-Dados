@@ -143,4 +143,35 @@ public class Tree {
 		}
 	}
 
+	//public void rotacao (Node fatherNode) {
+	//	if (fatherNode!= null || fatherNode.getHeigth() > 1) {
+	//		
+	//	}
+	//}
+	
+	 // Rotaciona para a direita
+    Node rightRotate(Node y) {
+        Node x = y.getLeft();
+        Node T2 = x.getRight();
+
+        // Realiza a  rotacão
+        x.setRight(y);
+        y.setLeft(T2);
+
+        // Retorna novo root
+        return x;
+    }
+
+	 // Rotaciona para a esquerda
+	Node leftRotate(Node x) {
+        Node y = x.getRight();
+        Node T2 = y.getLeft();
+
+        // Realiza a  rotacão
+        y.setLeft(x);
+        x.setRight(T2);
+
+
+        return y;
+    }
 }
