@@ -54,8 +54,17 @@ public class Tree {
 		}
 	}
 
+    public int filHeiht ( int valor , Node subRoot){
+        if(subRoot == null){
+            System.out.println(valor);
+            return valor; 
+        }
+        return  filHeiht(valor + 1 , subRoot.getRight()) - filHeiht(valor + 1 , subRoot.getLeft());
+       
+    }
+
 	// Remover
-	public void remove1(String info) {
+	public void delete(String info) {
 		rootNode = remove2(rootNode, info);
 	}
 

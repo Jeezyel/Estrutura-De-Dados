@@ -5,8 +5,17 @@ public class Node {
 	private String info;
 	private Node leftNode;
 	private Node rightNode;
+    private Integer heigth ;
 
-	public Node(String info) {
+	public Integer getHeigth() {
+        return heigth;
+    }
+
+    public void setHeigth(Integer heigth) {
+        this.heigth = heigth;
+    }
+
+    public Node(String info) {
 		this.info = info;
 		this.leftNode = null;
 		this.rightNode = null;
