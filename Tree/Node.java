@@ -7,6 +7,8 @@ public class Node {
 	private Node rightNode;
     private Integer heigth ;
 
+	
+
 	public Integer getHeigth() {
         return heigth;
     }
