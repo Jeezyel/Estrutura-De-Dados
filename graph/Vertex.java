@@ -1,3 +1,5 @@
+import unitins.Node;
+
 public class Vertex {
     
     private Node nodeA = null;

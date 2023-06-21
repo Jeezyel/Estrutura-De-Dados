@@ -1,4 +1,4 @@
-
+package unitins;
 
 public class Node {
 
@@ -45,6 +45,11 @@ public class Node {
 
 	public void setRight(Node rightNode) {
 		this.rightNode = rightNode;
+	}
+	
+	@Override
+    public String toString() {
+		return info; 
 	}
 
 }

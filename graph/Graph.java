@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import unitins.Node;
+
 public class Graph {
     
     private ArrayList<Node> shortestPath = new ArrayList<Node>();
