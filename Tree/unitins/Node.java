@@ -2,54 +2,43 @@ package unitins;
 
 public class Node {
 
-	private String info;
-	private Node leftNode;
-	private Node rightNode;
-    private Integer heigth ;
+	private String information;
+    private Node leftNodeTree;
+    private Node rightNodeTree;
 
-	
-
-	public Integer getHeigth() {
-        return heigth;
+    public String getInformation() {
+        return information;
     }
 
-    public void setHeigth(Integer heigth) {
-        this.heigth = heigth;
+    public void setInformation(String information) {
+        this.information = information;
     }
 
-    public Node(String info) {
-		this.info = info;
-		this.leftNode = null;
-		this.rightNode = null;
-	}
+    public Node getLeftNode() {
+        return leftNodeTree;
+    }
 
-	public String getInfo() {
-		return info;
-	}
+    public void setLeftNode(Node leftNodeTree) {
+        this.leftNodeTree = leftNodeTree;
+    }
 
-	public void setInfo(String info) {
-		this.info = info;
-	}
+    public Node getRightNode() {
+        return rightNodeTree;
+    }
 
-	public Node getLeft() {
-		return leftNode;
-	}
+    public void setRightNode(Node rightNodeTree) {
+        this.rightNodeTree = rightNodeTree;
+    }
 
-	public void setLeft(Node leftNode) {
-		this.leftNode = leftNode;
-	}
-
-	public Node getRight() {
-		return rightNode;
-	}
-
-	public void setRight(Node rightNode) {
-		this.rightNode = rightNode;
-	}
+    public Node(String information) {
+        this.information = information;
+        this.leftNodeTree = null;
+        this.rightNodeTree = null;
+    }
 	
 	@Override
     public String toString() {
-		return info; 
+		return information; 
 	}
 
 }

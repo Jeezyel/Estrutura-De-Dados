@@ -5,8 +5,34 @@ package unitins;
 public class Laboratorio {
 
 	public static void main(String[] args) {
+        Tree tree = new Tree();
+
+        tree.add("Lucas");
+        tree.add("Jorge");
+        tree.add("Pedro");
+        tree.add("Maria");
+        tree.add("Pedro");
+        tree.add("Ana");
+        tree.add("Pedro");
+        tree.add("George");
+        tree.add("Jonas");
+        tree.add("Maria");
+        tree.add("Leticia");
+        tree.add("Matheus");
+        tree.add("Wanderson");
+
+        tree.preOrder();
+
+        System.out.println("---------------------------------------------------");
+
+        tree.posOrder();
+
+        System.out.println("---------------------------------------------------");
+
+        tree.inOrder();
+
+
 		
-		System.out.print(Laboratorio.calculoDePotencia(2, 4));
 		
 	}
 	// RECURSIVIDADE 
@@ -23,6 +49,8 @@ public class Laboratorio {
 		//--potenciaDoNumero;
 	}
 }
+
+/* 
 
 class No {
     int valor;
@@ -90,5 +118,5 @@ class ArvoreBalanceada {
         // Percorre a árvore em ordem e imprime os valores
         arvore.percorrerEmOrdem(arvore.raiz);
     }
-}
+}*/
 
