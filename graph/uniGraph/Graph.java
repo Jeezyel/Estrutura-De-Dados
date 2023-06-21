@@ -1,6 +1,6 @@
+package uniGraph;
 import java.util.ArrayList;
 
-import unitins.Node;
 
 public class Graph {
     
